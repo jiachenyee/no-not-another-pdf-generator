@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32234A8728B61E16008B32B0 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32234A8628B61E16008B32B0 /* TableView.swift */; };
 		3244743428ADE90600741130 /* PDF_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244743328ADE90600741130 /* PDF_GeneratorApp.swift */; };
 		3244743628ADE90600741130 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244743528ADE90600741130 /* ContentView.swift */; };
 		3244743828ADE90800741130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3244743728ADE90800741130 /* Assets.xcassets */; };
@@ -19,9 +20,23 @@
 		3244747128AE7A0100741130 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244747028AE7A0100741130 /* ViewModel.swift */; };
 		3244747328AE7A3100741130 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244747228AE7A3100741130 /* FontFamily.swift */; };
 		3244747528AE92C600741130 /* ObjectInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244747428AE92C600741130 /* ObjectInspector.swift */; };
+		3244747728AF6ADE00741130 /* ObjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244747628AF6ADE00741130 /* ObjectListView.swift */; };
+		3244747928AF6ECE00741130 /* CanvasNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244747828AF6ECE00741130 /* CanvasNSView.swift */; };
+		3244747B28AF705000741130 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244747A28AF705000741130 /* CanvasView.swift */; };
+		3244747D28AF744300741130 /* CanvasClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244747C28AF744300741130 /* CanvasClipView.swift */; };
+		3245CC7C28B6170D001C61BD /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245CC7B28B6170D001C61BD /* ExportView.swift */; };
+		3245CC7F28B61833001C61BD /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 3245CC7E28B61833001C61BD /* SwiftCSV */; };
+		3279959828AF849300EE053F /* AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279959728AF849300EE053F /* AttachmentView.swift */; };
+		3279959A28AF8C1E00EE053F /* CanvasContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279959928AF8C1E00EE053F /* CanvasContentView.swift */; };
+		32A675CC28B3B98F00E0BD2D /* AttachmentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A675CB28B3B98F00E0BD2D /* AttachmentViewDelegate.swift */; };
+		32A675CE28B4FBEF00E0BD2D /* CanvasNSViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A675CD28B4FBEF00E0BD2D /* CanvasNSViewDelegate.swift */; };
+		32B2487528BB4F4D00F6E19F /* GeneratorCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2487428BB4F4D00F6E19F /* GeneratorCanvasView.swift */; };
+		32B2487728BB541C00F6E19F /* GeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2487628BB541C00F6E19F /* GeneratorViewModel.swift */; };
+		32B2487928BB610600F6E19F /* PDFFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2487828BB610600F6E19F /* PDFFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32234A8628B61E16008B32B0 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		3244743028ADE90600741130 /* no not another pdf generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "no not another pdf generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3244743328ADE90600741130 /* PDF_GeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_GeneratorApp.swift; sourceTree = "<group>"; };
 		3244743528ADE90600741130 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +51,18 @@
 		3244747028AE7A0100741130 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3244747228AE7A3100741130 /* FontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
 		3244747428AE92C600741130 /* ObjectInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectInspector.swift; sourceTree = "<group>"; };
+		3244747628AF6ADE00741130 /* ObjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectListView.swift; sourceTree = "<group>"; };
+		3244747828AF6ECE00741130 /* CanvasNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasNSView.swift; sourceTree = "<group>"; };
+		3244747A28AF705000741130 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		3244747C28AF744300741130 /* CanvasClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasClipView.swift; sourceTree = "<group>"; };
+		3245CC7B28B6170D001C61BD /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		3279959728AF849300EE053F /* AttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentView.swift; sourceTree = "<group>"; };
+		3279959928AF8C1E00EE053F /* CanvasContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasContentView.swift; sourceTree = "<group>"; };
+		32A675CB28B3B98F00E0BD2D /* AttachmentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentViewDelegate.swift; sourceTree = "<group>"; };
+		32A675CD28B4FBEF00E0BD2D /* CanvasNSViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasNSViewDelegate.swift; sourceTree = "<group>"; };
+		32B2487428BB4F4D00F6E19F /* GeneratorCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorCanvasView.swift; sourceTree = "<group>"; };
+		32B2487628BB541C00F6E19F /* GeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewModel.swift; sourceTree = "<group>"; };
+		32B2487828BB610600F6E19F /* PDFFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3245CC7F28B61833001C61BD /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +99,19 @@
 				3244743328ADE90600741130 /* PDF_GeneratorApp.swift */,
 				3244743528ADE90600741130 /* ContentView.swift */,
 				3244744228ADF6C200741130 /* EditorView.swift */,
+				3245CC7B28B6170D001C61BD /* ExportView.swift */,
+				32B2487828BB610600F6E19F /* PDFFile.swift */,
+				32234A8628B61E16008B32B0 /* TableView.swift */,
+				3279959928AF8C1E00EE053F /* CanvasContentView.swift */,
+				3244747828AF6ECE00741130 /* CanvasNSView.swift */,
+				3279959728AF849300EE053F /* AttachmentView.swift */,
+				32A675CB28B3B98F00E0BD2D /* AttachmentViewDelegate.swift */,
+				3244747C28AF744300741130 /* CanvasClipView.swift */,
+				3244747A28AF705000741130 /* CanvasView.swift */,
+				32B2487428BB4F4D00F6E19F /* GeneratorCanvasView.swift */,
+				32B2487628BB541C00F6E19F /* GeneratorViewModel.swift */,
+				32A675CD28B4FBEF00E0BD2D /* CanvasNSViewDelegate.swift */,
+				3244747628AF6ADE00741130 /* ObjectListView.swift */,
 				3244747428AE92C600741130 /* ObjectInspector.swift */,
 				3244747028AE7A0100741130 /* ViewModel.swift */,
 				3244747228AE7A3100741130 /* FontFamily.swift */,
@@ -109,6 +150,9 @@
 			dependencies = (
 			);
 			name = "PDF Generator";
+			packageProductDependencies = (
+				3245CC7E28B61833001C61BD /* SwiftCSV */,
+			);
 			productName = "PDF Generator";
 			productReference = 3244743028ADE90600741130 /* no not another pdf generator.app */;
 			productType = "com.apple.product-type.application";
@@ -137,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 3244742728ADE90600741130;
+			packageReferences = (
+				3245CC7D28B61833001C61BD /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = 3244743128ADE90600741130 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,12 +211,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3244744328ADF6C200741130 /* EditorView.swift in Sources */,
+				32234A8728B61E16008B32B0 /* TableView.swift in Sources */,
 				3244747128AE7A0100741130 /* ViewModel.swift in Sources */,
+				3245CC7C28B6170D001C61BD /* ExportView.swift in Sources */,
+				3244747B28AF705000741130 /* CanvasView.swift in Sources */,
+				3244747928AF6ECE00741130 /* CanvasNSView.swift in Sources */,
+				3279959A28AF8C1E00EE053F /* CanvasContentView.swift in Sources */,
+				3244747D28AF744300741130 /* CanvasClipView.swift in Sources */,
+				3244747728AF6ADE00741130 /* ObjectListView.swift in Sources */,
 				3244744B28AE0B2D00741130 /* HSplitStack.swift in Sources */,
+				32B2487928BB610600F6E19F /* PDFFile.swift in Sources */,
 				3244743628ADE90600741130 /* ContentView.swift in Sources */,
 				3244744528ADF6E800741130 /* Document.swift in Sources */,
+				32A675CC28B3B98F00E0BD2D /* AttachmentViewDelegate.swift in Sources */,
 				3244747328AE7A3100741130 /* FontFamily.swift in Sources */,
 				3244747528AE92C600741130 /* ObjectInspector.swift in Sources */,
+				3279959828AF849300EE053F /* AttachmentView.swift in Sources */,
+				32B2487528BB4F4D00F6E19F /* GeneratorCanvasView.swift in Sources */,
+				32A675CE28B4FBEF00E0BD2D /* CanvasNSViewDelegate.swift in Sources */,
+				32B2487728BB541C00F6E19F /* GeneratorViewModel.swift in Sources */,
 				3244744928AE00B100741130 /* Image+Data.swift in Sources */,
 				3244743428ADE90600741130 /* PDF_GeneratorApp.swift in Sources */,
 				3244744728ADF73800741130 /* Attachment.swift in Sources */,
@@ -382,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3245CC7D28B61833001C61BD /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3245CC7E28B61833001C61BD /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3245CC7D28B61833001C61BD /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3244742828ADE90600741130 /* Project object */;
 }

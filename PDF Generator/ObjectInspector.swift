@@ -31,7 +31,7 @@ struct ObjectInspector: View {
                             }
                             
                             let font = Binding {
-                                selectedAttachment.font ?? ""
+                                selectedAttachment.font
                             } set: { font in
                                 self.selectedAttachment?.font = font
                             }

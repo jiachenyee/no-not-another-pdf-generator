@@ -48,7 +48,12 @@ struct ContentView: View {
                     .frame(width: 150, height: 200)
                     
                     ForEach($viewModel.documents) { $document in
-                        NavigationLink(destination: EditorView(viewModel: viewModel, document: $document)) {
+                        NavigationLink {
+                            EditorView(viewModel: viewModel)
+                                .onAppear {
+                                    viewModel.selectedDocumentIndex = viewModel.documents.firstIndex(where: { $0.id == document.id })
+                                }
+                        } label: {
                             VStack {
                                 Image(data: document.image)
                                     .resizable()
