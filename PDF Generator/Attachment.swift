@@ -18,7 +18,7 @@ struct Attachment: Codable, Identifiable, Equatable {
     
     var type: AttachmentType
     
-    var text: String?
+    var text: String = ""
     var font: String = "Arial"
     var style: String = ""
     
@@ -40,7 +40,7 @@ struct Attachment: Codable, Identifiable, Equatable {
     }
 
     
-    init(id: UUID = UUID(), type: AttachmentType, text: String? = nil, font: String = "Arial", style: String = "", url: URL? = nil, data: Data? = nil, rect: CGRect, fontSize: Double) {
+    init(id: UUID = UUID(), type: AttachmentType, text: String = "", font: String = "Arial", style: String = "", url: URL? = nil, data: Data? = nil, rect: CGRect, fontSize: Double) {
         self.id = id
         self.type = type
         self.text = text

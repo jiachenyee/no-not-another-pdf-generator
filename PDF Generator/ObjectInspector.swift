@@ -19,7 +19,7 @@ struct ObjectInspector: View {
                     VStack(alignment: .leading) {
                         Section(selectedAttachment.type == .text ? "Text" : "Image") {
                             let text = Binding {
-                                selectedAttachment.text ?? ""
+                                selectedAttachment.text
                             } set: { text in
                                 self.selectedAttachment?.text = text
                             }

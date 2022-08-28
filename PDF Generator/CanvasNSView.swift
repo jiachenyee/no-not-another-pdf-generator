@@ -51,7 +51,6 @@ class CanvasNSView: NSScrollView {
     }
     
     func updateAttachment(view: AttachmentView, attachment: Attachment, selected: Bool) {
-//        guard view.attachment != attachment else { return }
         
         view.attachment = attachment
         view.setupAttachment()

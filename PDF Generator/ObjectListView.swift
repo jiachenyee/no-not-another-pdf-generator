@@ -32,13 +32,14 @@ struct ObjectListView: View {
                 .popover(isPresented: $isNewItemViewPresented) {
                     List {
                         Button {
-                            let newAttachment = Attachment(type: .text, text: "Text", rect: .init(x: 20, y: 20, width: 100, height: 100), fontSize: 20)
+                            let newAttachment = Attachment(type: .text, text: "", rect: .init(x: 20, y: 20, width: 100, height: 100), fontSize: 20)
                             
                             document.attachments.append(newAttachment)
                             selectedAttachment = newAttachment.id
                         } label: {
                             Label("Text", systemImage: "character.textbox")
                         }
+                        
                         Button {
                             
                         } label: {
@@ -54,9 +55,16 @@ struct ObjectListView: View {
                 ForEach(document.attachments) { attachment in
                     HStack {
                         Image(systemName: attachment.type == .text ? "character.textbox" : "photo")
-                        Text(attachment.text ?? "")
+                        Text(attachment.text.isEmpty ? "Unlinked Attachment" : attachment.text)
+                        
+                        Spacer()
+                        
+                        if attachment.text.isEmpty {
+                            Image(systemName: "exclamationmark.triangle.fill")
+                                .symbolRenderingMode(.multicolor)
+                        }
                     }
-                        .id(attachment.id)
+                    .id(attachment.id)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

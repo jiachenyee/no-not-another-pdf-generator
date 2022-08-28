@@ -29,98 +29,7 @@ struct EditorView: View {
                     if let attachmentIndex = viewModel.document.attachments.firstIndex(where: {
                         $0.id == viewModel.selectedAttachment
                     }) {
-                        ScrollView {
-                            VStack(alignment: .leading) {
-                                let attachment = viewModel.document.attachments[attachmentIndex]
-                                
-                                Section(attachment.type == .text ? "Text" : "Image") {
-                                    let text = Binding {
-                                        viewModel.document.attachments[attachmentIndex].text ?? ""
-                                    } set: { text in
-                                        viewModel.document.attachments[attachmentIndex].text = text
-                                    }
-                                    
-                                    HStack {
-                                        Text("Header Name")
-                                            .font(.callout)
-                                        TextField("Column Header Name", text: text)
-                                    }
-                                }
-                                
-                                Divider()
-                                
-                                Section("Font") {
-                                    Picker(selection: $viewModel.document.attachments[attachmentIndex].font) {
-                                        ForEach(viewModel.fonts) { family in
-                                            Text(family.familyName)
-                                                .tag(family.id)
-                                        }
-                                    } label: {
-                                        Text("Family")
-                                    }
-                                    .onChange(of: viewModel.document.attachments[attachmentIndex].font) { newValue in
-                                        let family = viewModel.fonts.first(where: { $0.id == attachment.font })!
-                                        
-                                        viewModel.document.attachments[attachmentIndex].style = family.fonts[0].id
-                                    }
-                                    
-                                    Picker(selection: $viewModel.document.attachments[attachmentIndex].style) {
-                                        
-                                        let family = viewModel.fonts.first(where: { $0.id == attachment.font })
-                                        
-                                        ForEach(family!.fonts) { font in
-                                            Text(font.humanReadableName)
-                                                .tag(font.id)
-                                        }
-                                    } label: {
-                                        Text("Weight")
-                                    }
-                                    
-                                    HStack {
-                                        Text("Size")
-                                            .font(.callout)
-                                        
-                                        TextField(value: $viewModel.document.attachments[attachmentIndex].fontSize, formatter: NumberFormatter()) {}
-                                        Stepper(value: $viewModel.document.attachments[attachmentIndex].fontSize) {}
-                                    }
-                                }
-                                
-                                Divider()
-                                
-                                Section("Customisation") {
-                                    ColorPicker("Text Color", selection: $viewModel.document.attachments[attachmentIndex].textColor)
-                                }
-                                
-                                Divider()
-                                
-                                Section("Position") {
-                                    HStack {
-                                        Text("X")
-                                            .font(.callout)
-                                        
-                                        TextField(value: $viewModel.document.attachments[attachmentIndex].rect.origin.x, formatter: NumberFormatter()) {}
-                                        Stepper(value: $viewModel.document.attachments[attachmentIndex].rect.origin.x) {}
-                                        
-                                        Spacer()
-                                        
-                                        Text("Y")
-                                            .font(.callout)
-                                        TextField(value: $viewModel.document.attachments[attachmentIndex].rect.origin.y, formatter: NumberFormatter()) {}
-                                        Stepper(value: $viewModel.document.attachments[attachmentIndex].rect.origin.y) {}
-                                    }
-                                }
-                                
-                                Spacer()
-                                
-                                Button(role: .destructive) {
-                                    
-                                } label: {
-                                    Label("Delete Object", systemImage: "trash")
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                }
-                            }
-                        }
-                        
+                        AttachmentInspectorView(viewModel: viewModel, attachmentIndex: attachmentIndex)
                         
                     } else {
                         
@@ -156,7 +65,7 @@ struct EditorView: View {
             
             ToolbarItemGroup(placement: .principal) {
                 Button {
-                    let newAttachment = Attachment(type: .text, text: "Text", rect: .init(x: 20, y: 20, width: 100, height: 100), fontSize: 20)
+                    let newAttachment = Attachment(type: .text, text: "", rect: .init(x: 20, y: 20, width: 100, height: 100), fontSize: 20)
                     viewModel.document.attachments.append(newAttachment)
                     
                     viewModel.selectedAttachment = newAttachment.id
@@ -165,7 +74,10 @@ struct EditorView: View {
                 }
                 
                 Button {
+                    let newAttachment = Attachment(type: .image, text: "", rect: .init(x: 20, y: 20, width: 100, height: 100), fontSize: 20)
+                    viewModel.document.attachments.append(newAttachment)
                     
+                    viewModel.selectedAttachment = newAttachment.id
                 } label: {
                     Label("Image", systemImage: "photo")
                 }

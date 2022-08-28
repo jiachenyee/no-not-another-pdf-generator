@@ -30,7 +30,7 @@ struct GeneratorCanvasView: NSViewRepresentable {
                 
                 switch attachment.type {
                 case .text:
-                    mutableAttachment.text = row[attachment.text!]
+                    mutableAttachment.text = row[attachment.text]!
                 case .image:
                     break
                 }

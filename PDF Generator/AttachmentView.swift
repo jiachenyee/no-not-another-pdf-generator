@@ -53,10 +53,9 @@ class AttachmentView: NSView {
     func setupAttachment() {
         switch attachment.type {
         case .text:
-            guard let text = attachment.text,
-                    let textView else { return }
-
-            textView.stringValue = text
+            guard let textView else { return }
+            
+            textView.stringValue = attachment.text.isEmpty ? "Text" : attachment.text
             textView.font = NSFont(name: attachment.style, size: attachment.fontSize)
             textView.textColor = attachment.textNSColor
             

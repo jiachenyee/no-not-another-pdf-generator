@@ -33,6 +33,7 @@
 		32B2487528BB4F4D00F6E19F /* GeneratorCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2487428BB4F4D00F6E19F /* GeneratorCanvasView.swift */; };
 		32B2487728BB541C00F6E19F /* GeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2487628BB541C00F6E19F /* GeneratorViewModel.swift */; };
 		32B2487928BB610600F6E19F /* PDFFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2487828BB610600F6E19F /* PDFFile.swift */; };
+		32B2487B28BB6DFA00F6E19F /* AttachmentInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2487A28BB6DFA00F6E19F /* AttachmentInspectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		32B2487428BB4F4D00F6E19F /* GeneratorCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorCanvasView.swift; sourceTree = "<group>"; };
 		32B2487628BB541C00F6E19F /* GeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewModel.swift; sourceTree = "<group>"; };
 		32B2487828BB610600F6E19F /* PDFFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFile.swift; sourceTree = "<group>"; };
+		32B2487A28BB6DFA00F6E19F /* AttachmentInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentInspectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				3244743328ADE90600741130 /* PDF_GeneratorApp.swift */,
 				3244743528ADE90600741130 /* ContentView.swift */,
 				3244744228ADF6C200741130 /* EditorView.swift */,
+				32B2487A28BB6DFA00F6E19F /* AttachmentInspectorView.swift */,
 				3245CC7B28B6170D001C61BD /* ExportView.swift */,
 				32B2487828BB610600F6E19F /* PDFFile.swift */,
 				32234A8628B61E16008B32B0 /* TableView.swift */,
@@ -229,6 +232,7 @@
 				3279959828AF849300EE053F /* AttachmentView.swift in Sources */,
 				32B2487528BB4F4D00F6E19F /* GeneratorCanvasView.swift in Sources */,
 				32A675CE28B4FBEF00E0BD2D /* CanvasNSViewDelegate.swift in Sources */,
+				32B2487B28BB6DFA00F6E19F /* AttachmentInspectorView.swift in Sources */,
 				32B2487728BB541C00F6E19F /* GeneratorViewModel.swift in Sources */,
 				3244744928AE00B100741130 /* Image+Data.swift in Sources */,
 				3244743428ADE90600741130 /* PDF_GeneratorApp.swift in Sources */,
